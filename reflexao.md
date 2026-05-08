@@ -17,3 +17,14 @@ Só precisa alterar em um lugar, no arquivo do componente <ItemCardapio />.
 
 ## 3- Como os dados (nome, preço) chegaram dentro do componente? 
 Através do chamado 'props', que está presente no arquivo 'App.jsx'
+
+# Perguntas do Passo 3
+
+## 1- Por que uma variável comum (let total = 0) não atualiza a tela? 
+Porque deve se utilizar o 'useState'.
+
+## 2- Onde foi necessário guardar o número total - no 'App.jsx' ou no <ItemCardapio />? Por quê?
+Porque é onde fica o controle geral dos pedidos.
+
+## 3- Como botão (filho) consegue avisar o 'App' (pai) que houve um clique?
+O botão usa uma função passada pelas 'props'. Assim, o componente filho consegue chamar uma função que está no componente pai.
